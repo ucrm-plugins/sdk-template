@@ -28,8 +28,8 @@
     "scripts": {
         "post-create-project-cmd": [],
         "post-update-cmd": [
-            "bash -c 'rm -rf vendor'",
-            "bash -c 'rm -rf composer.lock'"
+            "@php ../../bin/repo mod:decompose",
+            "@php ../../bin/repo mod:addPSR"
         ]
     }
 }

@@ -1,3 +1,4 @@
 tests/              export-ignore
 vendor/             export-ignore
 composer.lock       export-ignore
+**/.gitkeep         export-ignore

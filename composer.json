@@ -3,7 +3,7 @@
     "description": "A template for UCRM Plugin SDK libraries.",
     "type": "ucrm-library",
     "license": "MIT",
-    "homepage": "https://git.jetbrains.space/spaethtech/ucrm-plugins/sdk-template.git",
+    "homepage": "https://github.com/ucrm-plugins/sdk-template.git",
     "authors": [
         {
             "name": "Ryan Spaeth",

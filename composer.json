@@ -1,0 +1,35 @@
+{
+    "name": "ucrm-plugins/sdk-template",
+    "description": "A template for UCRM Plugin SDK libraries.",
+    "type": "ucrm-library",
+    "license": "MIT",
+    "homepage": "https://git.jetbrains.space/spaethtech/ucrm-plugins/sdk-template.git",
+    "authors": [
+        {
+            "name": "Ryan Spaeth",
+            "email": "rspaeth@spethtech.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SpaethTech\\UCRM\\SDK\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SpaethTech\\UCRM\\SDK\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [],
+        "post-update-cmd": [
+            "bash -c 'rm -rf vendor'",
+            "bash -c 'rm -rf composer.lock'"
+        ]
+    }
+}
